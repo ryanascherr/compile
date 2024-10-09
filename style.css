@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+  }
+
+  .emphasis {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .card-container {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    color: white;
+    background-color: #36454F;
+    width: 250px;
+    padding: 1rem;
+    font-family: sans-serif;
+    /* margin: 2rem; */
+    border-radius: 10px;
+    justify-self: center;
+    margin: 1rem;
+  }
+  .card--darkness {
+    background: #343434;
+  }
+  .card--death {
+    background: #301934;
+  }
+  .card--fire {
+    background: #D22B2B;
+  }
+  .card--life {
+    background: #088F8F;
+  }
+  .card--gravity {
+    background: #702963;
+  }
+  .card--light {
+    background: #E97451;
+  }
+  .card--metal {
+    background: #808080;
+  }
+  .card--plague {
+    background: #097969;
+  }
+  .card--psychic {
+    background: #800080;
+  }
+  .card--speed {
+    background: #7393B3;
+  }
+  .card--spirit {
+    background: #00008B;
+  }
+  .card--water {
+    background: #0047AB;
+  }
+
+  .card__top {
+    display: flex;
+  }
+
+  .card__protocol {
+    border: 1px solid white;
+    border-right: 0;
+    padding: 2px;
+    align-self: start;
+    min-width: 40%;
+  }
+
+  .card__power {
+    font-size: 40px;
+    border: 1px solid white;
+    padding: 5px;
+  }
+
+  .card__box {
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: .25rem 0;
+    height: 75px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+  }
+  .card-box--opaque {
+    background-color: #36454F;
+    opacity: 90%;
+  }
