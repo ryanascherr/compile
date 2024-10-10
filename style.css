@@ -4,6 +4,7 @@
 
   body {
     font-family: sans-serif;
+    background-color: #A9A9A9;
   }
 
   .emphasis {
@@ -29,7 +30,7 @@
     /* margin: 2rem; */
     border-radius: 10px;
     justify-self: center;
-    margin: 1rem;
+    margin: .75rem;
   }
   .card--darkness {
     background: #343434;
@@ -102,12 +103,81 @@
 
   /* Filters */
 
-  .filters {}
+  input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+    accent-color: black;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filters__filter {
+    padding: 1rem;
+    border: 2px solid black;
+    margin: 1rem;
+    align-self: stretch;
+  }
+
+  .filters__title {
+    text-align: center;
+  }
+
+  .filters__btn-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .filters__btn {
+    margin: .5rem;
+    padding: .5rem;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    outline: none;
+    transition-duration: .35s;
+  }
+  .filters__btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
 
   .filters__list {
-    /* display: flex; */
+    padding: 0;
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
   }
 
   .filters__list-item {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    /* margin: .5rem 0; */
   }
+  .filters__list-item:hover {
+    cursor: pointer;
+  }
+
+  .filters__input {
+    margin-right: .5rem;
+  }
+  .filters__input:hover {
+    cursor: pointer;
+  }
+
+  .filters__label {
+    font-size: 18px;
+  }
+  .filters__label:hover {
+    cursor: pointer;
+  }
+

@@ -662,6 +662,22 @@ $(".js_protocol").click(function() {
 $(".js_power").click(function() {
     checkFilters();
 })
+$(".js_select-all-protocol").click(function() {
+    $(".js_protocol").prop("checked", true);
+    checkFilters();
+})
+$(".js_remove-all-protocol").click(function() {
+    $(".js_protocol").prop("checked", false);
+    checkFilters();
+})
+$(".js_select-all-power").click(function() {
+    $(".js_power").prop("checked", true);
+    checkFilters();
+})
+$(".js_remove-all-power").click(function() {
+    $(".js_power").prop("checked", false);
+    checkFilters();
+})
 
 function checkFilters() {
     let array = cards;
