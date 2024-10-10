@@ -13,9 +13,6 @@
   }
   
   .card-container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem; */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -26,8 +23,6 @@
     background-color: #36454F;
     width: 250px;
     padding: 1rem;
-    /* font-family: sans-serif; */
-    /* margin: 2rem; */
     border-radius: 10px;
     justify-self: center;
     margin: .75rem;
@@ -113,6 +108,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .filters__filter {
