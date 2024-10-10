@@ -872,7 +872,7 @@ function checkProtocols() {
     let spirit = $('.js_spirit').is(':checked');
     let water = $('.js_water').is(':checked');
 
-    return [apathy, darkness, death, fire, gravity, life, light, love, metal, plague, psychic, speed, spirit, water];
+    return [apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water];
 };
 
 function checkPower() {
