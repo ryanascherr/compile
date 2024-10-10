@@ -1,5 +1,9 @@
-* {
+  * {
     margin: 0;
+  }
+
+  body {
+    font-family: sans-serif;
   }
 
   .emphasis {
@@ -21,7 +25,7 @@
     background-color: #36454F;
     width: 250px;
     padding: 1rem;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     /* margin: 2rem; */
     border-radius: 10px;
     justify-self: center;

@@ -652,7 +652,82 @@ let cards = [
 initialize();
 
 function initialize() {
-    $(cards).each(function( index ) {
+    let array = cards;
+    displayCards(array);
+}
+
+$(".js_protocol").click(function() {
+    let array = cards;
+
+    let [darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water] = checkProtocols();
+
+    array = getProtocols(array, darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water);
+
+    displayCards(array);
+})
+
+function checkProtocols() {
+    let darkness = $('.js_darkness').is(':checked');
+    let death = $('.js_death').is(':checked');
+    let fire = $('.js_fire').is(':checked');
+    let life = $('.js_life').is(':checked');
+    let gravity = $('.js_gravity').is(':checked');
+    let light = $('.js_light').is(':checked');
+    let metal = $('.js_metal').is(':checked');
+    let plague = $('.js_plague').is(':checked');
+    let psychic = $('.js_psychic').is(':checked');
+    let speed = $('.js_speed').is(':checked');
+    let spirit = $('.js_spirit').is(':checked');
+    let water = $('.js_water').is(':checked');
+
+    return [darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water];
+};
+
+function getProtocols(array, darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water) {
+    if (!darkness) {
+        array = array.filter(cards => cards.protocol != "Darkness");
+    }
+    if (!death) {
+        array = array.filter(cards => cards.protocol != "Death");
+    }
+    if (!fire) {
+        array = array.filter(cards => cards.protocol != "Fire");
+    }
+    if (!life) {
+        array = array.filter(cards => cards.protocol != "Life");
+    }
+    if (!gravity) {
+        array = array.filter(cards => cards.protocol != "Gravity");
+    }
+    if (!light) {
+        array = array.filter(cards => cards.protocol != "Light");
+    }
+    if (!metal) {
+        array = array.filter(cards => cards.protocol != "Metal");
+    }
+    if (!plague) {
+        array = array.filter(cards => cards.protocol != "Plague");
+    }
+    if (!psychic) {
+        array = array.filter(cards => cards.protocol != "Psychic");
+    }
+    if (!speed) {
+        array = array.filter(cards => cards.protocol != "Speed");
+    }
+    if (!spirit) {
+        array = array.filter(cards => cards.protocol != "Spirit");
+    }
+    if (!water) {
+        array = array.filter(cards => cards.protocol != "Water");
+    }
+
+    return array;
+}
+
+function displayCards(array) {
+    $(".card-container").empty();
+
+    $(array).each(function( index ) {
         let topBackground = this.top != "" ? "card-box--opaque" : "";
         let middleBackground = this.middle != "" ? "card-box--opaque" : "";
         let bottomBackground = this.bottom != "" ? "card-box--opaque" : "";
