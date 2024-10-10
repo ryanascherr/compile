@@ -216,6 +216,60 @@ let cards = [
         }
     },
     {
+        protocol: "Hate",
+        power: 0,
+        top: "",
+        middle: "Delete 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Hate",
+        power: 1,
+        top: "",
+        middle: "Discard 3 cards. Delete 1 card. Delete 1 card",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Hate",
+        power: 2,
+        top: "",
+        middle: "Delete your highest value card. Delete your opponent's highest value card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Hate",
+        power: 3,
+        top: "<div><span class='emphasis'>After you delete cards:</span> Draw 1 card.</div>",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Hate",
+        power: 4,
+        top: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete the lowest value covered card in this line.</div>",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Hate",
+        power: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
         protocol: "Life",
         power: 0,
         top: "",
@@ -319,6 +373,60 @@ let cards = [
         power: 5,
         top: "",
         middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Love",
+        power: 1,
+        top: "",
+        middle: "Draw the top card of your opponent's deck.",
+        bottom: "<div><span class='emphasis'>End:</span> You may give 1 card from your hand to your opponent. If you do, draw 2 cards.</div>",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Love",
+        power: 2,
+        top: "",
+        middle: "Your opponent draws 1 card. Refresh.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Love",
+        power: 3,
+        top: "",
+        middle: "Take 1 random card from your opponent's hand. Give 1 card from your hand to your opponent",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Love",
+        power: 4,
+        top: "",
+        middle: "Reveal 1 card from your hand. Flip 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Love",
+        power: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Love",
+        power: 6,
+        top: "",
+        middle: "Your opponent draws 2 cards.",
         bottom: "",
         keywords: {
         }
@@ -682,11 +790,11 @@ $(".js_remove-all-power").click(function() {
 function checkFilters() {
     let array = cards;
 
-    let [darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water] = checkProtocols();
+    let [darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water] = checkProtocols();
 
     let [zero, one, two, three, four, five, six] = checkPower();
 
-    array = getProtocols(array, darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water);
+    array = getProtocols(array, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water);
 
     array = getPower(array, zero, one, two, three, four, five, six)
 
@@ -697,9 +805,11 @@ function checkProtocols() {
     let darkness = $('.js_darkness').is(':checked');
     let death = $('.js_death').is(':checked');
     let fire = $('.js_fire').is(':checked');
-    let life = $('.js_life').is(':checked');
     let gravity = $('.js_gravity').is(':checked');
+    let hate = $('.js_hate').is(':checked');
+    let life = $('.js_life').is(':checked');
     let light = $('.js_light').is(':checked');
+    let love = $('.js_love').is(':checked');
     let metal = $('.js_metal').is(':checked');
     let plague = $('.js_plague').is(':checked');
     let psychic = $('.js_psychic').is(':checked');
@@ -707,7 +817,7 @@ function checkProtocols() {
     let spirit = $('.js_spirit').is(':checked');
     let water = $('.js_water').is(':checked');
 
-    return [darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water];
+    return [darkness, death, fire, gravity, life, light, love, metal, plague, psychic, speed, spirit, water];
 };
 
 function checkPower() {
@@ -722,7 +832,7 @@ function checkPower() {
     return [zero, one, two, three, four, five, six];
 };
 
-function getProtocols(array, darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water) {
+function getProtocols(array, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water) {
     if (!darkness) {
         array = array.filter(cards => cards.protocol != "Darkness");
     }
@@ -732,14 +842,20 @@ function getProtocols(array, darkness, death, fire, life, gravity, light, metal,
     if (!fire) {
         array = array.filter(cards => cards.protocol != "Fire");
     }
-    if (!life) {
-        array = array.filter(cards => cards.protocol != "Life");
-    }
     if (!gravity) {
         array = array.filter(cards => cards.protocol != "Gravity");
     }
+    if (!hate) {
+        array = array.filter(cards => cards.protocol != "Hate");
+    }
+    if (!life) {
+        array = array.filter(cards => cards.protocol != "Life");
+    }
     if (!light) {
         array = array.filter(cards => cards.protocol != "Light");
+    }
+    if (!love) {
+        array = array.filter(cards => cards.protocol != "Love");
     }
     if (!metal) {
         array = array.filter(cards => cards.protocol != "Metal");
