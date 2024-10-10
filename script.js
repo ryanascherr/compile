@@ -657,14 +657,25 @@ function initialize() {
 }
 
 $(".js_protocol").click(function() {
+    checkFilters();
+})
+$(".js_power").click(function() {
+    checkFilters();
+})
+
+function checkFilters() {
     let array = cards;
 
     let [darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water] = checkProtocols();
 
+    let [zero, one, two, three, four, five, six] = checkPower();
+
     array = getProtocols(array, darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water);
 
+    array = getPower(array, zero, one, two, three, four, five, six)
+
     displayCards(array);
-})
+}
 
 function checkProtocols() {
     let darkness = $('.js_darkness').is(':checked');
@@ -681,6 +692,18 @@ function checkProtocols() {
     let water = $('.js_water').is(':checked');
 
     return [darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water];
+};
+
+function checkPower() {
+    let zero = $('.js_zero').is(':checked');
+    let one = $('.js_one').is(':checked');
+    let two = $('.js_two').is(':checked');
+    let three = $('.js_three').is(':checked');
+    let four = $('.js_four').is(':checked');
+    let five = $('.js_five').is(':checked');
+    let six = $('.js_six').is(':checked');
+
+    return [zero, one, two, three, four, five, six];
 };
 
 function getProtocols(array, darkness, death, fire, life, gravity, light, metal, plague, psychic, speed, spirit, water) {
@@ -719,6 +742,32 @@ function getProtocols(array, darkness, death, fire, life, gravity, light, metal,
     }
     if (!water) {
         array = array.filter(cards => cards.protocol != "Water");
+    }
+
+    return array;
+}
+
+function getPower(array, zero, one, two, three, four, five, six) {
+    if (!zero) {
+        array = array.filter(cards => cards.power != 0);
+    }
+    if (!one) {
+        array = array.filter(cards => cards.power != 1);
+    }
+    if (!two) {
+        array = array.filter(cards => cards.power != 2);
+    }
+    if (!three) {
+        array = array.filter(cards => cards.power != 3);
+    }
+    if (!four) {
+        array = array.filter(cards => cards.power != 4);
+    }
+    if (!five) {
+        array = array.filter(cards => cards.power != 5);
+    }
+    if (!six) {
+        array = array.filter(cards => cards.power != 6);
     }
 
     return array;

@@ -99,3 +99,15 @@
     background-color: #36454F;
     opacity: 90%;
   }
+
+  /* Filters */
+
+  .filters {}
+
+  .filters__list {
+    /* display: flex; */
+  }
+
+  .filters__list-item {
+    list-style-type: none;
+  }
