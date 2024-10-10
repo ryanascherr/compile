@@ -162,60 +162,6 @@ let cards = [
         }
     },
     {
-        protocol: "Life",
-        power: 0,
-        top: "",
-        middle: "Play the top card of your deck face-down in each line where you have a card.",
-        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete this card.</div>",
-        keywords: {
-        }
-    },
-    {
-        protocol: "Life",
-        power: 1,
-        top: "",
-        middle: "Flip 1 card. Flip 1 card.",
-        bottom: "",
-        keywords: {
-        }
-    },
-    {
-        protocol: "Life",
-        power: 2,
-        top: "",
-        middle: "Draw 1 card. You may flip 1 face-down card.",
-        bottom: "",
-        keywords: {
-        }
-    },
-    {
-        protocol: "Life",
-        power: 3,
-        top: "",
-        middle: "",
-        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, play the top card of your deck face-down in another line.</div>",
-        keywords: {
-        }
-    },
-    {
-        protocol: "Life",
-        power: 4,
-        top: "",
-        middle: "If this card is covering a card, draw 1 card.",
-        bottom: "",
-        keywords: {
-        }
-    },
-    {
-        protocol: "Life",
-        power: 5,
-        top: "",
-        middle: "You discard 1 card.",
-        bottom: "",
-        keywords: {
-        }
-    },
-    {
         protocol: "Gravity",
         power: 0,
         top: "",
@@ -265,6 +211,60 @@ let cards = [
         power: 6,
         top: "",
         middle: "Your opponent plays the top card of their deck face-down in this line.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Life",
+        power: 0,
+        top: "",
+        middle: "Play the top card of your deck face-down in each line where you have a card.",
+        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete this card.</div>",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Life",
+        power: 1,
+        top: "",
+        middle: "Flip 1 card. Flip 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Life",
+        power: 2,
+        top: "",
+        middle: "Draw 1 card. You may flip 1 face-down card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Life",
+        power: 3,
+        top: "",
+        middle: "",
+        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, play the top card of your deck face-down in another line.</div>",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Life",
+        power: 4,
+        top: "",
+        middle: "If this card is covering a card, draw 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Life",
+        power: 5,
+        top: "",
+        middle: "You discard 1 card.",
         bottom: "",
         keywords: {
         }
