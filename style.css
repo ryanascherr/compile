@@ -37,14 +37,17 @@
   .card--fire {
     background: #D22B2B;
   }
-  .card--life {
-    background: #088F8F;
-  }
   .card--gravity {
     background: #702963;
   }
+  .card--life {
+    background: #088F8F;
+  }
   .card--light {
     background: #E97451;
+  }
+  .card--love {
+    background: #FF33FF;
   }
   .card--metal {
     background: #808080;
