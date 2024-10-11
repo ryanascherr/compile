@@ -71,6 +71,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -127,6 +128,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -186,6 +188,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -215,6 +218,7 @@ let cards = [
         middle: "Discard 1 card. If you do, return 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -224,6 +228,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='empahsis'>End:</span> You may discard 1 card. If you do, flip 1 card.</div>",
         keywords: {
+            KEYWORD.discard,
             KEYWORD.flip,
         }
     },
@@ -234,6 +239,7 @@ let cards = [
         middle: "Discard 1 or more cards. Draw the amount discarded plus 1.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -243,6 +249,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -289,6 +296,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -318,6 +326,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.delete,
+            KEYWORD.discard,
         }
     },
     {
@@ -357,6 +366,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -414,6 +424,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -470,6 +481,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -516,6 +528,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -572,6 +585,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -591,6 +605,7 @@ let cards = [
         middle: "Your opponent discards 1 card.",
         bottom: "Your opponent cannot play cards in this line.",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -600,15 +615,17 @@ let cards = [
         middle: "Your opponent discards 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
         protocol: "Plague",
         value: 2,
         top: "",
-        middle: "Dicard 1 or more cards. Your opponent discards the amount of cards discarded plus 1.",
+        middle: "Discard 1 or more cards. Your opponent discards the amount of cards discarded plus 1.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -639,6 +656,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -648,6 +666,7 @@ let cards = [
         middle: "Draw 2 cards. Your opponent discards 2 cards, then reveals their hand.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -667,6 +686,7 @@ let cards = [
         middle: "Your opponent discards 2 cards. Rearrange their protocols.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -676,6 +696,7 @@ let cards = [
         middle: "Your opponent discards 1 card. Shift 1 of their cards.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -695,6 +716,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -750,6 +772,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -768,6 +791,7 @@ let cards = [
         middle: "Draw 2 cards.",
         bottom: "<div><span class='emphasis'>Start:</span> Either discard 1 card or flip this card.</div>",
         keywords: {
+            KEYWORD.discard,
             KEYWORD.flip,
         }
     },
@@ -806,6 +830,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
     {
@@ -861,6 +886,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.discard,
         }
     },
 ]
