@@ -223,6 +223,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.return,
         }
     },
     {
@@ -736,6 +737,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>End:</span> You may return 1 of your opponent's cards. If you do, flip this card.</div>",
         keywords: {
             KEYWORD.flip,
+            KEYWORD.return,
         }
     },
     {
@@ -906,6 +908,7 @@ let cards = [
         middle: "Return all cards with a value of 2 in 1 line.",
         bottom: "",
         keywords: {
+            KEYWORD.return,
         }
     },
     {
@@ -915,6 +918,7 @@ let cards = [
         middle: "Return 1 of your cards.",
         bottom: "",
         keywords: {
+            KEYWORD.return,
         }
     },
     {
