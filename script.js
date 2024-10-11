@@ -706,7 +706,7 @@ let cards = [
         value: 0,
         top: "",
         middle: "Refresh. Draw 1 card.",
-        bottom: "",
+        bottom: "Skip your check cache phase.",
         keywords: {
         }
     },
