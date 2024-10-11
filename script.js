@@ -81,6 +81,7 @@ let cards = [
         middle: "Draw 3 cards. Shift 1 of your opponent's covered cards.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -149,6 +150,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.delete,
+            KEYWORD.draw,
         }
     },
     {
@@ -198,6 +200,7 @@ let cards = [
         middle: "Flip 1 other card. Draw 2 cards.",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, draw 1 card and flip 1 other card.</div>",
         keywords: {
+            KEYWORD.draw,
             KEYWORD.flip,
         }
     },
@@ -240,6 +243,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.draw,
         }
     },
     {
@@ -268,6 +272,7 @@ let cards = [
         middle: "Draw 2 cards. Shift 1 card either to or from this line.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -347,6 +352,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.delete,
+            KEYWORD.draw,
         }
     },
     {
@@ -396,6 +402,7 @@ let cards = [
         middle: "Draw 1 card. You may flip 1 face-down card.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
             KEYWORD.flip,
         }
     },
@@ -415,6 +422,7 @@ let cards = [
         middle: "If this card is covering a card, draw 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -434,6 +442,7 @@ let cards = [
         middle: "Flip 1 card. Draw cards equal to that card's value.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
             KEYWORD.flip,
         }
     },
@@ -444,6 +453,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> Draw 1 card.</div>",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -453,6 +463,7 @@ let cards = [
         middle: "Draw 2 cards. Reveal 1 face-down card. You may shift or flip that card.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
             KEYWORD.flip,
         }
     },
@@ -491,6 +502,7 @@ let cards = [
         middle: "Draw the top card of your opponent's deck.",
         bottom: "<div><span class='emphasis'>End:</span> You may give 1 card from your hand to your opponent. If you do, draw 2 cards.</div>",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -500,6 +512,7 @@ let cards = [
         middle: "Your opponent draws 1 card. Refresh.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -538,6 +551,7 @@ let cards = [
         middle: "Your opponent draws 2 cards.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -557,6 +571,7 @@ let cards = [
         middle: "Draw 2 cards. Your opponent cannot compile next turn.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -576,6 +591,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.delete,
+            KEYWORD.draw,
         }
     },
     {
@@ -616,6 +632,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.draw,
         }
     },
     {
@@ -667,6 +684,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.draw,
         }
     },
     {
@@ -735,6 +753,7 @@ let cards = [
         middle: "Draw 2 cards.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -782,6 +801,7 @@ let cards = [
         middle: "Refresh. Draw 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
@@ -792,6 +812,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>Start:</span> Either discard 1 card or flip this card.</div>",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.draw,
             KEYWORD.flip,
         }
     },
@@ -859,6 +880,7 @@ let cards = [
         middle: "Draw 2 cards. Rearrange your protocols.",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
