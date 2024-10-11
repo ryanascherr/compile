@@ -1,3 +1,19 @@
+const KEYWORD = {    
+    delete: 0,
+    discard: 1,
+    draw: 2,
+    flip: 3,
+    give: 4,
+    play: 5,
+    rearrange: 6,
+    return: 7,
+    reveal: 8,
+    refresh: 9,
+    shift: 10,
+    swap: 11,
+    take: 12,
+}
+
 let cards = [
     {
         protocol: "Apathy",
