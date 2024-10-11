@@ -84,12 +84,14 @@
     padding: 2px;
     align-self: start;
     min-width: 40%;
+    background-color: #36454F;
   }
 
   .card__power {
     font-size: 40px;
     border: 1px solid white;
     padding: 5px;
+    background-color: #36454F;
   }
 
   .card__box {
