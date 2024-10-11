@@ -111,6 +111,7 @@ let cards = [
         middle: "Play 1 card face-down in another line.",
         bottom: "",
         keywords: {
+            KEYWORD.play,
         }
     },
     {
@@ -263,6 +264,7 @@ let cards = [
         middle: "For every 2 cards in this line, play the top card of your deck face-down under this card.",
         bottom: "",
         keywords: {
+            KEYWORD.play,
         }
     },
     {
@@ -311,6 +313,7 @@ let cards = [
         middle: "Your opponent plays the top card of their deck face-down in this line.",
         bottom: "",
         keywords: {
+            KEYWORD.play,
         }
     },
     {
@@ -383,6 +386,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete this card.</div>",
         keywords: {
             KEYWORD.delete,
+            KEYWORD.play,
         }
     },
     {
@@ -413,6 +417,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, play the top card of your deck face-down in another line.</div>",
         keywords: {
+            KEYWORD.play,
         }
     },
     {
@@ -583,6 +588,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            KEYWORD.play,
         }
     },
     {
@@ -624,6 +630,7 @@ let cards = [
         bottom: "Your opponent cannot play cards in this line.",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.play,
         }
     },
     {
@@ -697,6 +704,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>Start:</span> Flip this card.</div>",
         keywords: {
             KEYWORD.flip,
+            KEYWORD.play,
         }
     },
     {
@@ -746,6 +754,7 @@ let cards = [
         middle: "Play 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.play,
         }
     },
     {
@@ -816,6 +825,7 @@ let cards = [
             KEYWORD.discard,
             KEYWORD.draw,
             KEYWORD.flip,
+            KEYWORD.play,
         }
     },
     {
@@ -873,6 +883,7 @@ let cards = [
         middle: "Play the top card of your deck face-down in each other line.",
         bottom: "",
         keywords: {
+            KEYWORD.play,
         }
     },
     {
