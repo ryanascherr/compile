@@ -282,7 +282,7 @@ let cards = [
         protocol: "Hate",
         power: 1,
         top: "",
-        middle: "Discard 3 cards. Delete 1 card. Delete 1 card",
+        middle: "Discard 3 cards. Delete 1 card. Delete 1 card.",
         bottom: "",
         keywords: {
         }
@@ -453,7 +453,7 @@ let cards = [
         protocol: "Love",
         power: 3,
         top: "",
-        middle: "Take 1 random card from your opponent's hand. Give 1 card from your hand to your opponent",
+        middle: "Take 1 random card from your opponent's hand. Give 1 card from your hand to your opponent.",
         bottom: "",
         keywords: {
         }
