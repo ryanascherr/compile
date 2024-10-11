@@ -845,6 +845,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            KEYWORD.draw,
         }
     },
     {
