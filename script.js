@@ -503,6 +503,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>End:</span> You may give 1 card from your hand to your opponent. If you do, draw 2 cards.</div>",
         keywords: {
             KEYWORD.draw,
+            KEYWORD.give,
         }
     },
     {
@@ -522,6 +523,7 @@ let cards = [
         middle: "Take 1 random card from your opponent's hand. Give 1 card from your hand to your opponent.",
         bottom: "",
         keywords: {
+            KEYWORD.give,
         }
     },
     {
