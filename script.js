@@ -877,6 +877,7 @@ let cards = [
         middle: "Swap the positions of 2 of your protocols",
         bottom: "",
         keywords: {
+            KEYWORD.swap,
         }
     },
     {
