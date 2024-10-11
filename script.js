@@ -82,6 +82,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.draw,
+            KEYWORD.shift,
         }
     },
     {
@@ -92,6 +93,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.flip,
+            KEYWORD.shift,
         }
     },
     {
@@ -121,6 +123,7 @@ let cards = [
         middle: "Shift 1 face-down card.",
         bottom: "",
         keywords: {
+            KEYWORD.shift,
         }
     },
     {
@@ -276,6 +279,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.draw,
+            KEYWORD.shift,
         }
     },
     {
@@ -286,6 +290,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.flip,
+            KEYWORD.shift,
         }
     },
     {
@@ -295,6 +300,7 @@ let cards = [
         middle: "Shift 1 face-down card to this line.",
         bottom: "",
         keywords: {
+            KEYWORD.shift,
         }
     },
     {
@@ -472,6 +478,7 @@ let cards = [
             KEYWORD.draw,
             KEYWORD.flip,
             KEYWORD.reveal,
+            KEYWORD.shift,
         }
     },
     {
@@ -481,6 +488,7 @@ let cards = [
         middle: "Shift all face-down cards in this line to another line.",
         bottom: "",
         keywords: {
+            KEYWORD.shift,
         }
     },
     {
@@ -732,6 +740,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.shift,
         }
     },
     {
@@ -782,6 +791,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            KEYWORD.shift,
         }
     },
     {
@@ -792,6 +802,7 @@ let cards = [
         bottom: "<div><span class='emphasis'>End:</span> You may shift 1 of your cards. If you do, flip this card.</div>",
         keywords: {
             KEYWORD.flip,
+            KEYWORD.shift,
         }
     },
     {
@@ -801,6 +812,7 @@ let cards = [
         middle: "Shift 1 of your opponent's face-down cards.",
         bottom: "",
         keywords: {
+            KEYWORD.shift,
         }
     },
     {
@@ -855,6 +867,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.draw,
+            KEYWORD.shift,
         }
     },
     {
