@@ -471,6 +471,7 @@ let cards = [
         keywords: {
             KEYWORD.draw,
             KEYWORD.flip,
+            KEYWORD.reveal,
         }
     },
     {
@@ -489,6 +490,7 @@ let cards = [
         middle: "Your opponent reveals their hand.",
         bottom: "",
         keywords: {
+            KEYWORD.reveal,
         }
     },
     {
@@ -540,6 +542,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.flip,
+            KEYWORD.reveal,
         }
     },
     {
@@ -695,6 +698,7 @@ let cards = [
         keywords: {
             KEYWORD.discard,
             KEYWORD.draw,
+            KEYWORD.reveal,
         }
     },
     {
