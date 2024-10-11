@@ -136,7 +136,7 @@ let cards = [
         middle: "Delete 1 card from each other line.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -146,7 +146,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -156,7 +156,7 @@ let cards = [
         middle: "Delete all cards in 1 line with values of 1 or 2.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -166,7 +166,7 @@ let cards = [
         middle: "Delete 1 face-down card.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -176,7 +176,7 @@ let cards = [
         middle: "Delete a card with a value of 0 or 1.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -205,7 +205,7 @@ let cards = [
         middle: "Discard 1 card. If you do, delete 1 card.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -307,7 +307,7 @@ let cards = [
         middle: "Delete 1 card.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -317,7 +317,7 @@ let cards = [
         middle: "Discard 3 cards. Delete 1 card. Delete 1 card.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -327,7 +327,7 @@ let cards = [
         middle: "Delete your highest value card. Delete your opponent's highest value card.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -337,7 +337,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -347,7 +347,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete the lowest value covered card in this line.</div>",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -366,7 +366,7 @@ let cards = [
         middle: "Play the top card of your deck face-down in each line where you have a card.",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete this card.</div>",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -562,7 +562,7 @@ let cards = [
         middle: "Draw 1 card. Delete all cards in 1 other line with 8 or more cards.",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -581,7 +581,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
         }
     },
     {
@@ -628,7 +628,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> Your opponent deletes 1 of their face-down cards. You may flip this card.</div>",
         keywords: {
-            KEYWORDS.delete,
+            KEYWORD.delete,
             KEYWORD.flip,
         }
     },
