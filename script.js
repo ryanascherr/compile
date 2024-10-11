@@ -31,6 +31,7 @@ let cards = [
         middle: "Flip all other face-up cards in this line.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -40,6 +41,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, flip this card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -49,6 +51,7 @@ let cards = [
         middle: "Flip 1 of your opponent's face-up cards.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -58,6 +61,7 @@ let cards = [
         middle: "You may flip 1 of your covered cards.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -85,6 +89,7 @@ let cards = [
         middle: "Flip 1 of your opponent's cards. You may shift that card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -94,6 +99,7 @@ let cards = [
         middle: "You may flip 1 covered card in this line.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -184,6 +190,7 @@ let cards = [
         middle: "Flip 1 other card. Draw 2 cards.",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, draw 1 card and flip 1 other card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -211,6 +218,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='empahsis'>End:</span> You may discard 1 card. If you do, flip 1 card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -256,6 +264,7 @@ let cards = [
         middle: "Flip 1 card. Shift that card to this line.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -355,6 +364,7 @@ let cards = [
         middle: "Flip 1 card. Flip 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -364,6 +374,7 @@ let cards = [
         middle: "Draw 1 card. You may flip 1 face-down card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -400,6 +411,7 @@ let cards = [
         middle: "Flip 1 card. Draw cards equal to that card's value.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -418,6 +430,7 @@ let cards = [
         middle: "Draw 2 cards. Reveal 1 face-down card. You may shift or flip that card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -481,6 +494,7 @@ let cards = [
         middle: "Reveal 1 card from your hand. Flip 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -508,6 +522,7 @@ let cards = [
         middle: "Flip 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -589,6 +604,7 @@ let cards = [
         middle: "Flip each other face-up card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -598,6 +614,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> Your opponent deletes 1 of their face-down cards. You may flip this card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -625,6 +642,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>Start:</span> Flip this card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -652,6 +670,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> You may return 1 of your opponent's cards. If you do, flip this card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -697,6 +716,7 @@ let cards = [
         middle: "Shift 1 of your other cards.",
         bottom: "<div><span class='emphasis'>End:</span> You may shift 1 of your cards. If you do, flip this card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -733,6 +753,7 @@ let cards = [
         middle: "Draw 2 cards.",
         bottom: "<div><span class='emphasis'>Start:</span> Either discard 1 card or flip this card.</div>",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -742,6 +763,7 @@ let cards = [
         middle: "You may flip 1 card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
@@ -778,6 +800,7 @@ let cards = [
         middle: "Flip 1 other card. Flip this card.",
         bottom: "",
         keywords: {
+            KEYWORD.flip,
         }
     },
     {
