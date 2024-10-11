@@ -1,3 +1,1 @@
-# Compile
-
-[pages]([url](https://ryanascherr.github.io/compile/))
+# [Compile database](https://ryanascherr.github.io/compile/)
