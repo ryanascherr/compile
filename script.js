@@ -715,6 +715,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.discard,
+            KEYWORD.rearrange,
         }
     },
     {
@@ -895,6 +896,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.draw,
+            KEYWORD.rearrange,
         }
     },
     {
