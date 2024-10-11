@@ -522,6 +522,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.draw,
+            KEYWORD.refresh,
         }
     },
     {
@@ -820,6 +821,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.draw,
+            KEYWORD.refresh,
         }
     },
     {
