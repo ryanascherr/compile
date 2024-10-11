@@ -541,6 +541,7 @@ let cards = [
         bottom: "",
         keywords: {
             KEYWORD.give,
+            KEYWORD.take,
         }
     },
     {
