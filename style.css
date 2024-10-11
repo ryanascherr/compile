@@ -28,6 +28,9 @@
     justify-self: center;
     margin: .75rem;
   }
+  .card--apathy {
+    background: #514F4D;
+  }
   .card--darkness {
     background: #343434;
   }

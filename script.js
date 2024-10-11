@@ -1,5 +1,59 @@
 let cards = [
     {
+        protocol: "Apathy",
+        power: 0,
+        top: "Your total value in this line is increased by 1 for each face-down card in this line.",
+        middle: "",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Apathy",
+        power: 1,
+        top: "",
+        middle: "Flip all other face-up cards in this line.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Apathy",
+        power: 2,
+        top: "Ignore all middle commands of cards in this line.",
+        middle: "",
+        bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, flip this card.</div>",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Apathy",
+        power: 3,
+        top: "",
+        middle: "Flip 1 of your opponent's face-up cards.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Apathy",
+        power: 4,
+        top: "",
+        middle: "You may flip 1 of your covered cards.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
+        protocol: "Apathy",
+        power: 5,
+        top: "",
+        middle: "You discard 1 card.",
+        bottom: "",
+        keywords: {
+        }
+    },
+    {
         protocol: "Darkness",
         power: 0,
         top: "",
@@ -790,11 +844,11 @@ $(".js_remove-all-power").click(function() {
 function checkFilters() {
     let array = cards;
 
-    let [darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water] = checkProtocols();
+    let [apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water] = checkProtocols();
 
     let [zero, one, two, three, four, five, six] = checkPower();
 
-    array = getProtocols(array, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water);
+    array = getProtocols(array, apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water);
 
     array = getPower(array, zero, one, two, three, four, five, six)
 
@@ -802,6 +856,7 @@ function checkFilters() {
 }
 
 function checkProtocols() {
+    let apathy = $('.js_apathy').is(':checked');
     let darkness = $('.js_darkness').is(':checked');
     let death = $('.js_death').is(':checked');
     let fire = $('.js_fire').is(':checked');
@@ -817,7 +872,7 @@ function checkProtocols() {
     let spirit = $('.js_spirit').is(':checked');
     let water = $('.js_water').is(':checked');
 
-    return [darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water];
+    return [apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water];
 };
 
 function checkPower() {
@@ -832,7 +887,10 @@ function checkPower() {
     return [zero, one, two, three, four, five, six];
 };
 
-function getProtocols(array, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water) {
+function getProtocols(array, apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water) {
+    if (!apathy) {
+        array = array.filter(cards => cards.protocol != "Apathy");
+    }
     if (!darkness) {
         array = array.filter(cards => cards.protocol != "Darkness");
     }
