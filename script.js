@@ -15,7 +15,8 @@ let cards = [
         middle: "Flip all other face-up cards in this line.",
         bottom: "",
         keywords: {
-        }
+            flip: true,
+        },
     },
     {
         protocol: "Apathy",
@@ -24,6 +25,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, flip this card.</div>",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -33,6 +35,7 @@ let cards = [
         middle: "Flip 1 of your opponent's face-up cards.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -42,6 +45,7 @@ let cards = [
         middle: "You may flip 1 of your covered cards.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -51,6 +55,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -60,6 +65,8 @@ let cards = [
         middle: "Draw 3 cards. Shift 1 of your opponent's covered cards.",
         bottom: "",
         keywords: {
+            draw: true,
+            shift: true,
         }
     },
     {
@@ -69,6 +76,8 @@ let cards = [
         middle: "Flip 1 of your opponent's cards. You may shift that card.",
         bottom: "",
         keywords: {
+            flip: true,
+            shift: true,
         }
     },
     {
@@ -78,6 +87,7 @@ let cards = [
         middle: "You may flip 1 covered card in this line.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -87,6 +97,7 @@ let cards = [
         middle: "Play 1 card face-down in another line.",
         bottom: "",
         keywords: {
+            play: true,
         }
     },
     {
@@ -96,6 +107,7 @@ let cards = [
         middle: "Shift 1 face-down card.",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
@@ -105,6 +117,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -114,6 +127,7 @@ let cards = [
         middle: "Delete 1 card from each other line.",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -123,6 +137,8 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            delete: true,
+            draw: true,
         }
     },
     {
@@ -132,6 +148,7 @@ let cards = [
         middle: "Delete all cards in 1 line with values of 1 or 2.",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -141,6 +158,7 @@ let cards = [
         middle: "Delete 1 face-down card.",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -150,6 +168,7 @@ let cards = [
         middle: "Delete a card with a value of 0 or 1.",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -159,6 +178,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -168,6 +188,8 @@ let cards = [
         middle: "Flip 1 other card. Draw 2 cards.",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, draw 1 card and flip 1 other card.</div>",
         keywords: {
+            draw: true,
+            flip: true,
         }
     },
     {
@@ -177,6 +199,8 @@ let cards = [
         middle: "Discard 1 card. If you do, delete 1 card.",
         bottom: "",
         keywords: {
+            delete: true,
+            discard: true,
         }
     },
     {
@@ -186,6 +210,8 @@ let cards = [
         middle: "Discard 1 card. If you do, return 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
+            return: true,
         }
     },
     {
@@ -195,6 +221,8 @@ let cards = [
         middle: "",
         bottom: "<div><span class='empahsis'>End:</span> You may discard 1 card. If you do, flip 1 card.</div>",
         keywords: {
+            discard: true,
+            flip: true,
         }
     },
     {
@@ -204,6 +232,8 @@ let cards = [
         middle: "Discard 1 or more cards. Draw the amount discarded plus 1.",
         bottom: "",
         keywords: {
+            discard: true,
+            draw: true,
         }
     },
     {
@@ -213,6 +243,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -222,6 +253,7 @@ let cards = [
         middle: "For every 2 cards in this line, play the top card of your deck face-down under this card.",
         bottom: "",
         keywords: {
+            play: true,
         }
     },
     {
@@ -231,6 +263,8 @@ let cards = [
         middle: "Draw 2 cards. Shift 1 card either to or from this line.",
         bottom: "",
         keywords: {
+            draw: true,
+            shift: true,
         }
     },
     {
@@ -240,6 +274,8 @@ let cards = [
         middle: "Flip 1 card. Shift that card to this line.",
         bottom: "",
         keywords: {
+            flip: true,
+            shift: true,
         }
     },
     {
@@ -249,6 +285,7 @@ let cards = [
         middle: "Shift 1 face-down card to this line.",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
@@ -258,6 +295,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -267,6 +305,7 @@ let cards = [
         middle: "Your opponent plays the top card of their deck face-down in this line.",
         bottom: "",
         keywords: {
+            play: true,
         }
     },
     {
@@ -276,6 +315,7 @@ let cards = [
         middle: "Delete 1 card.",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -285,6 +325,8 @@ let cards = [
         middle: "Discard 3 cards. Delete 1 card. Delete 1 card.",
         bottom: "",
         keywords: {
+            delete: true,
+            discard: true,
         }
     },
     {
@@ -294,6 +336,7 @@ let cards = [
         middle: "Delete your highest value card. Delete your opponent's highest value card.",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -303,6 +346,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            draw: true,
         }
     },
     {
@@ -312,6 +356,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete the lowest value covered card in this line.</div>",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -321,6 +366,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -330,6 +376,8 @@ let cards = [
         middle: "Play the top card of your deck face-down in each line where you have a card.",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, delete this card.</div>",
         keywords: {
+            delete: true,
+            play: true,
         }
     },
     {
@@ -339,6 +387,7 @@ let cards = [
         middle: "Flip 1 card. Flip 1 card.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -348,6 +397,8 @@ let cards = [
         middle: "Draw 1 card. You may flip 1 face-down card.",
         bottom: "",
         keywords: {
+            draw: true,
+            flip: true,
         }
     },
     {
@@ -357,6 +408,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>When this card would be covered:</span> First, play the top card of your deck face-down in another line.</div>",
         keywords: {
+            play: true,
         }
     },
     {
@@ -366,6 +418,7 @@ let cards = [
         middle: "If this card is covering a card, draw 1 card.",
         bottom: "",
         keywords: {
+            draw: true,
         }
     },
     {
@@ -375,6 +428,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -384,6 +438,8 @@ let cards = [
         middle: "Flip 1 card. Draw cards equal to that card's value.",
         bottom: "",
         keywords: {
+            draw: true,
+            flip: true,
         }
     },
     {
@@ -393,6 +449,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> Draw 1 card.</div>",
         keywords: {
+            draw: true,
         }
     },
     {
@@ -402,6 +459,10 @@ let cards = [
         middle: "Draw 2 cards. Reveal 1 face-down card. You may shift or flip that card.",
         bottom: "",
         keywords: {
+            draw: true,
+            flip: true,
+            reveal: true,
+            shift: true,
         }
     },
     {
@@ -411,6 +472,7 @@ let cards = [
         middle: "Shift all face-down cards in this line to another line.",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
@@ -420,6 +482,7 @@ let cards = [
         middle: "Your opponent reveals their hand.",
         bottom: "",
         keywords: {
+            reveal: true,
         }
     },
     {
@@ -429,6 +492,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -438,6 +502,8 @@ let cards = [
         middle: "Draw the top card of your opponent's deck.",
         bottom: "<div><span class='emphasis'>End:</span> You may give 1 card from your hand to your opponent. If you do, draw 2 cards.</div>",
         keywords: {
+            draw: true,
+            give: true,
         }
     },
     {
@@ -447,6 +513,8 @@ let cards = [
         middle: "Your opponent draws 1 card. Refresh.",
         bottom: "",
         keywords: {
+            draw: true,
+            refresh: true,
         }
     },
     {
@@ -456,6 +524,8 @@ let cards = [
         middle: "Take 1 random card from your opponent's hand. Give 1 card from your hand to your opponent.",
         bottom: "",
         keywords: {
+            give: true,
+            take: true,
         }
     },
     {
@@ -465,6 +535,8 @@ let cards = [
         middle: "Reveal 1 card from your hand. Flip 1 card.",
         bottom: "",
         keywords: {
+            flip: true,
+            reveal: true,
         }
     },
     {
@@ -474,6 +546,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -483,6 +556,7 @@ let cards = [
         middle: "Your opponent draws 2 cards.",
         bottom: "",
         keywords: {
+            draw: true,
         }
     },
     {
@@ -492,6 +566,7 @@ let cards = [
         middle: "Flip 1 card.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -501,6 +576,7 @@ let cards = [
         middle: "Draw 2 cards. Your opponent cannot compile next turn.",
         bottom: "",
         keywords: {
+            draw: true,
         }
     },
     {
@@ -519,6 +595,8 @@ let cards = [
         middle: "Draw 1 card. Delete all cards in 1 other line with 8 or more cards.",
         bottom: "",
         keywords: {
+            delete: true,
+            draw: true,
         }
     },
     {
@@ -528,6 +606,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -537,6 +616,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            delete: true,
         }
     },
     {
@@ -546,6 +626,7 @@ let cards = [
         middle: "Your opponent discards 1 card.",
         bottom: "Your opponent cannot play cards in this line.",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -555,6 +636,8 @@ let cards = [
         middle: "Your opponent discards 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
+            draw: true,
         }
     },
     {
@@ -564,6 +647,7 @@ let cards = [
         middle: "Dicard 1 or more cards. Your opponent discards the amount of cards discarded plus 1.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -573,6 +657,7 @@ let cards = [
         middle: "Flip each other face-up card.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -582,6 +667,8 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> Your opponent deletes 1 of their face-down cards. You may flip this card.</div>",
         keywords: {
+            delete: true,
+            flip: true,
         }
     },
     {
@@ -591,6 +678,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -600,6 +688,9 @@ let cards = [
         middle: "Draw 2 cards. Your opponent discards 2 cards, then reveals their hand.",
         bottom: "",
         keywords: {
+            discard: true,
+            draw: true,
+            reveal: true,
         }
     },
     {
@@ -609,6 +700,7 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>Start:</span> Flip this card.</div>",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -618,6 +710,8 @@ let cards = [
         middle: "Your opponent discards 2 cards. Rearrange their protocols.",
         bottom: "",
         keywords: {
+            discard: true,
+            rearrange: true,
         }
     },
     {
@@ -627,6 +721,8 @@ let cards = [
         middle: "Your opponent discards 1 card. Shift 1 of their cards.",
         bottom: "",
         keywords: {
+            discard: true,
+            shift: true,
         }
     },
     {
@@ -636,6 +732,8 @@ let cards = [
         middle: "",
         bottom: "<div><span class='emphasis'>End:</span> You may return 1 of your opponent's cards. If you do, flip this card.</div>",
         keywords: {
+            flip: true,
+            return: true,
         }
     },
     {
@@ -645,6 +743,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -654,6 +753,7 @@ let cards = [
         middle: "Play 1 card.",
         bottom: "",
         keywords: {
+            play: true,
         }
     },
     {
@@ -663,6 +763,7 @@ let cards = [
         middle: "Draw 2 cards.",
         bottom: "",
         keywords: {
+            draw: true,
         }
     },
     {
@@ -672,6 +773,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
@@ -681,6 +783,8 @@ let cards = [
         middle: "Shift 1 of your other cards.",
         bottom: "<div><span class='emphasis'>End:</span> You may shift 1 of your cards. If you do, flip this card.</div>",
         keywords: {
+            flip: true,
+            shift: true,
         }
     },
     {
@@ -690,6 +794,7 @@ let cards = [
         middle: "Shift 1 of your opponent's face-down cards.",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
@@ -699,6 +804,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -708,6 +814,8 @@ let cards = [
         middle: "Refresh. Draw 1 card.",
         bottom: "Skip your check cache phase.",
         keywords: {
+            draw: true,
+            refresh: true,
         }
     },
     {
@@ -717,6 +825,9 @@ let cards = [
         middle: "Draw 2 cards.",
         bottom: "<div><span class='emphasis'>Start:</span> Either discard 1 card or flip this card.</div>",
         keywords: {
+            discard: true,
+            draw: true,
+            flip: true,
         }
     },
     {
@@ -726,6 +837,7 @@ let cards = [
         middle: "You may flip 1 card.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -735,6 +847,7 @@ let cards = [
         middle: "",
         bottom: "",
         keywords: {
+            shift: true,
         }
     },
     {
@@ -744,6 +857,7 @@ let cards = [
         middle: "Swap the positions of 2 of your protocols",
         bottom: "",
         keywords: {
+            swap: true,
         }
     },
     {
@@ -753,6 +867,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
     {
@@ -762,6 +877,7 @@ let cards = [
         middle: "Flip 1 other card. Flip this card.",
         bottom: "",
         keywords: {
+            flip: true,
         }
     },
     {
@@ -771,6 +887,7 @@ let cards = [
         middle: "Play the top card of your deck face-down in each other line.",
         bottom: "",
         keywords: {
+            play: true,
         }
     },
     {
@@ -780,6 +897,8 @@ let cards = [
         middle: "Draw 2 cards. Rearrange your protocols.",
         bottom: "",
         keywords: {
+            draw: true,
+            rearrange: true,
         }
     },
     {
@@ -789,6 +908,7 @@ let cards = [
         middle: "Return all cards with a value of 2 in 1 line.",
         bottom: "",
         keywords: {
+            return: true,
         }
     },
     {
@@ -798,6 +918,7 @@ let cards = [
         middle: "Return 1 of your cards.",
         bottom: "",
         keywords: {
+            return: true,
         }
     },
     {
@@ -807,6 +928,7 @@ let cards = [
         middle: "You discard 1 card.",
         bottom: "",
         keywords: {
+            discard: true,
         }
     },
 ]
@@ -822,6 +944,9 @@ $(".js_protocol").click(function() {
     checkFilters();
 })
 $(".js_value").click(function() {
+    checkFilters();
+})
+$(".js_keyword").click(function() {
     checkFilters();
 })
 $(".js_select-all-protocol").click(function() {
@@ -840,6 +965,14 @@ $(".js_remove-all-value").click(function() {
     $(".js_value").prop("checked", false);
     checkFilters();
 })
+$(".js_select-all-keywords").click(function() {
+    $(".js_keyword").prop("checked", true);
+    checkFilters();
+})
+$(".js_remove-all-keywords").click(function() {
+    $(".js_keyword").prop("checked", false);
+    checkFilters();
+})
 
 function checkFilters() {
     let array = cards;
@@ -848,9 +981,13 @@ function checkFilters() {
 
     let [zero, one, two, three, four, five, six] = checkValue();
 
+    let [deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take] = checkKeywords();
+
     array = getProtocols(array, apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water);
 
-    array = getValue(array, zero, one, two, three, four, five, six)
+    array = getValue(array, zero, one, two, three, four, five, six);
+
+    array = getKeywords(array, deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take);
 
     displayCards(array);
 }
@@ -886,6 +1023,24 @@ function checkValue() {
 
     return [zero, one, two, three, four, five, six];
 };
+
+function checkKeywords() {
+    let deleteVar = $('.js_delete').is(':checked');
+    let discard = $('.js_discard').is(':checked');
+    let draw = $('.js_draw').is(':checked');
+    let flip = $('.js_flip').is(':checked');
+    let give = $('.js_give').is(':checked');
+    let play = $('.js_play').is(':checked');
+    let rearrange = $('.js_rearrange').is(':checked');
+    let returnVar = $('.js_return').is(':checked');
+    let reveal = $('.js_reveal').is(':checked');
+    let refresh = $('.js_refresh').is(':checked');
+    let shift = $('.js_shift').is(':checked');
+    let swap = $('.js_swap').is(':checked');
+    let take = $('.js_take').is(':checked');
+
+    return [deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take];
+}
 
 function getProtocols(array, apathy, darkness, death, fire, gravity, hate, life, light, love, metal, plague, psychic, speed, spirit, water) {
     if (!apathy) {
@@ -958,6 +1113,50 @@ function getValue(array, zero, one, two, three, four, five, six) {
     }
     if (!six) {
         array = array.filter(cards => cards.value != 6);
+    }
+
+    return array;
+}
+
+function getKeywords(array, deleteVar, discard, draw, flip, give, play, rearrange, returnVar, reveal, refresh, shift, swap, take) {
+    if (deleteVar) {
+        array = array.filter(cards => cards.keywords.delete == true);
+    }
+    if (discard) {
+        array = array.filter(cards => cards.keywords.discard == true);
+    }
+    if (draw) {
+        array = array.filter(cards => cards.keywords.draw == true);
+    }
+    if (flip) {
+        array = array.filter(cards => cards.keywords.flip == true);
+    }
+    if (give) {
+        array = array.filter(cards => cards.keywords.give == true);
+    }
+    if (play) {
+        array = array.filter(cards => cards.keywords.play == true);
+    }
+    if (rearrange) {
+        array = array.filter(cards => cards.keywords.rearrange == true);
+    }
+    if (returnVar) {
+        array = array.filter(cards => cards.keywords.return == true);
+    }
+    if (reveal) {
+        array = array.filter(cards => cards.keywords.reveal == true);
+    }
+    if (refresh) {
+        array = array.filter(cards => cards.keywords.refresh == true);
+    }
+    if (shift) {
+        array = array.filter(cards => cards.keywords.shift == true);
+    }
+    if (swap) {
+        array = array.filter(cards => cards.keywords.swap == true);
+    }
+    if (take) {
+        array = array.filter(cards => cards.keywords.take == true);
     }
 
     return array;
