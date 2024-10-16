@@ -42,7 +42,7 @@ let cards = [
         protocol: "Apathy",
         value: 4,
         top: "",
-        middle: "You may flip 1 of your covered cards.",
+        middle: "You may flip 1 of your face-up covered cards.",
         bottom: "",
         keywords: {
             flip: true,
